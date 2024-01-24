@@ -28,23 +28,144 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuFormCaptionButton2 = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
+            this.bunifuFormCaptionButton1 = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(68)))), ((int)(((byte)(94)))));
+            this.panel1.Controls.Add(this.bunifuFormCaptionButton2);
+            this.panel1.Controls.Add(this.bunifuFormCaptionButton1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1920, 49);
+            this.panel1.TabIndex = 1;
+            // 
+            // bunifuFormCaptionButton2
+            // 
+            this.bunifuFormCaptionButton2.AllowAnimations = true;
+            this.bunifuFormCaptionButton2.AllowBorderColorChanges = true;
+            this.bunifuFormCaptionButton2.AllowDefaults = true;
+            this.bunifuFormCaptionButton2.AllowMouseEffects = true;
+            this.bunifuFormCaptionButton2.AnimationSpeed = 200;
+            this.bunifuFormCaptionButton2.AutoSizeCaptions = true;
+            this.bunifuFormCaptionButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton2.BackHoverColor = System.Drawing.Color.LightGray;
+            this.bunifuFormCaptionButton2.BackPressedColor = System.Drawing.Color.Silver;
+            this.bunifuFormCaptionButton2.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton2.BorderHoverColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton2.BorderPressedColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton2.BorderRadius = 1;
+            this.bunifuFormCaptionButton2.BorderStyle = Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderStyles.Solid;
+            this.bunifuFormCaptionButton2.BorderThickness = 1;
+            this.bunifuFormCaptionButton2.CaptionType = Bunifu.UI.WinForms.BunifuFormCaptionButton.CaptionTypes.Minimize;
+            this.bunifuFormCaptionButton2.ColorContrastOnClick = 30;
+            this.bunifuFormCaptionButton2.ColorContrastOnHover = 30;
+            this.bunifuFormCaptionButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.bunifuFormCaptionButton2.CustomizableEdges = borderEdges9;
+            this.bunifuFormCaptionButton2.DefaultBorderColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton2.DefaultColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuFormCaptionButton2.IconColor = System.Drawing.Color.White;
+            this.bunifuFormCaptionButton2.IconHoverColor = System.Drawing.Color.White;
+            this.bunifuFormCaptionButton2.IconPressedColor = System.Drawing.Color.White;
+            this.bunifuFormCaptionButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuFormCaptionButton2.Image")));
+            this.bunifuFormCaptionButton2.ImageMargin = new System.Windows.Forms.Padding(1, 1, 0, 0);
+            this.bunifuFormCaptionButton2.ImageSize = new System.Drawing.Size(20, 20);
+            this.bunifuFormCaptionButton2.Location = new System.Drawing.Point(1782, 0);
+            this.bunifuFormCaptionButton2.Name = "bunifuFormCaptionButton2";
+            this.bunifuFormCaptionButton2.ShowBorders = true;
+            this.bunifuFormCaptionButton2.Size = new System.Drawing.Size(65, 47);
+            this.bunifuFormCaptionButton2.TabIndex = 0;
+            // 
+            // bunifuFormCaptionButton1
+            // 
+            this.bunifuFormCaptionButton1.AllowAnimations = true;
+            this.bunifuFormCaptionButton1.AllowBorderColorChanges = true;
+            this.bunifuFormCaptionButton1.AllowDefaults = true;
+            this.bunifuFormCaptionButton1.AllowMouseEffects = true;
+            this.bunifuFormCaptionButton1.AnimationSpeed = 200;
+            this.bunifuFormCaptionButton1.AutoSizeCaptions = true;
+            this.bunifuFormCaptionButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton1.BackHoverColor = System.Drawing.Color.LightGray;
+            this.bunifuFormCaptionButton1.BackPressedColor = System.Drawing.Color.Silver;
+            this.bunifuFormCaptionButton1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton1.BorderHoverColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton1.BorderPressedColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton1.BorderRadius = 1;
+            this.bunifuFormCaptionButton1.BorderStyle = Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderStyles.Solid;
+            this.bunifuFormCaptionButton1.BorderThickness = 1;
+            this.bunifuFormCaptionButton1.CaptionType = Bunifu.UI.WinForms.BunifuFormCaptionButton.CaptionTypes.Close;
+            this.bunifuFormCaptionButton1.ColorContrastOnClick = 30;
+            this.bunifuFormCaptionButton1.ColorContrastOnHover = 30;
+            this.bunifuFormCaptionButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.bunifuFormCaptionButton1.CustomizableEdges = borderEdges10;
+            this.bunifuFormCaptionButton1.DefaultBorderColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton1.DefaultColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuFormCaptionButton1.IconColor = System.Drawing.Color.White;
+            this.bunifuFormCaptionButton1.IconHoverColor = System.Drawing.Color.White;
+            this.bunifuFormCaptionButton1.IconPressedColor = System.Drawing.Color.White;
+            this.bunifuFormCaptionButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuFormCaptionButton1.Image")));
+            this.bunifuFormCaptionButton1.ImageMargin = new System.Windows.Forms.Padding(1, 1, 0, 0);
+            this.bunifuFormCaptionButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.bunifuFormCaptionButton1.Location = new System.Drawing.Point(1849, 0);
+            this.bunifuFormCaptionButton1.Name = "bunifuFormCaptionButton1";
+            this.bunifuFormCaptionButton1.ShowBorders = true;
+            this.bunifuFormCaptionButton1.Size = new System.Drawing.Size(65, 47);
+            this.bunifuFormCaptionButton1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(218)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 49);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(296, 971);
+            this.panel2.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1425, 783);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(241)))), ((int)(((byte)(244)))));
+            this.ClientSize = new System.Drawing.Size(1920, 1020);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private Bunifu.UI.WinForms.BunifuFormCaptionButton bunifuFormCaptionButton2;
+        private Bunifu.UI.WinForms.BunifuFormCaptionButton bunifuFormCaptionButton1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

@@ -231,6 +231,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Mockups\MockupCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Mockups\MockupCard.Designer.cs">
+      <DependentUpon>MockupCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Mockups\MockupHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Mockups\MockupHome.Designer.cs">
+      <DependentUpon>MockupHome.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +255,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Mockups\MockupCard.resx">
+      <DependentUpon>MockupCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Mockups\MockupHome.resx">
+      <DependentUpon>MockupHome.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -258,7 +276,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="View\Mockups\" />
     <Folder Include="View\Panels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
