@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms.Extensions;
+using CarduriMeniu.View.Panels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,18 @@ namespace CarduriMeniu
         public Form1()
         {
             InitializeComponent();
+
+            this.Controls.Add(new PnlMeniu(this));    
+        }
+
+        private void bunifuFormCaptionButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bunifuFormCaptionButton2_Click(object sender, EventArgs e)
+        {
+            this.Minimize();
         }
     }
 }
