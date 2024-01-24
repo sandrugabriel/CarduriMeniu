@@ -23,7 +23,7 @@ namespace CarduriMeniu
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MockupHome());
+            Application.Run(new Form1());
         }
 
 
