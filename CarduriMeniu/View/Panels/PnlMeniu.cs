@@ -1,8 +1,11 @@
 ﻿using Bunifu.Framework.UI;
 using Bunifu.UI.WinForms;
 using CarduriMeniu.Arbore;
+using CarduriMeniu.Models;
+using CarduriMeniu.Service;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -31,6 +34,8 @@ namespace CarduriMeniu.View.Panels
 
         string tag;
 
+        ServiceQuery serviceQuery;
+
         public PnlMeniu(Form1 form1)
         {
 
@@ -38,9 +43,11 @@ namespace CarduriMeniu.View.Panels
 
             listArbori = new List<Arbore<Button>>();
 
+            serviceQuery = new ServiceQuery();
+
             this.Name = "PnlMeniu";
             this.Size = new System.Drawing.Size(321, 971);
-            this.BackColor = System.Drawing.Color.FromArgb(117, 230, 218);
+            this.BackColor = System.Drawing.Color.FromArgb(1, 79, 134);
             this.Font = new System.Drawing.Font("Century Gothic", 14);
             this.Location = new Point(0, 49);
 
@@ -70,7 +77,8 @@ namespace CarduriMeniu.View.Panels
             this.btn1.FlatAppearance.BorderSize = 0;
             this.btn1.FlatStyle = FlatStyle.Flat;
             this.btn1.Size = new System.Drawing.Size(240, 80);
-            this.btn1.BackColor = System.Drawing.Color.FromArgb(75, 222, 207);
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(44, 125, 160);
+            this.btn1.ForeColor = Color.White;
             this.btn1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn1.Name = "btn1";
 
@@ -78,7 +86,7 @@ namespace CarduriMeniu.View.Panels
             this.btn2.FlatAppearance.BorderSize = 0;
             this.btn2.FlatStyle = FlatStyle.Flat;
             this.btn2.Size = new System.Drawing.Size(240, 80);
-            this.btn2.BackColor = System.Drawing.Color.FromArgb(75, 222, 207);
+            this.btn2.BackColor = System.Drawing.Color.FromArgb(44, 125, 160);
             this.btn2.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn2.Name = "btn2";
 
@@ -86,7 +94,7 @@ namespace CarduriMeniu.View.Panels
             this.btn3.FlatAppearance.BorderSize = 0;
             this.btn3.FlatStyle = FlatStyle.Flat;
             this.btn3.Size = new System.Drawing.Size(240, 80);
-            this.btn3.BackColor = System.Drawing.Color.FromArgb(75, 222, 207);
+            this.btn3.BackColor = System.Drawing.Color.FromArgb(44, 125, 160);
             this.btn3.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn3.Name = "btn3";
 
@@ -94,7 +102,7 @@ namespace CarduriMeniu.View.Panels
             this.btn4.FlatAppearance.BorderSize = 0;
             this.btn4.FlatStyle = FlatStyle.Flat;
             this.btn4.Size = new System.Drawing.Size(240, 80);
-            this.btn4.BackColor = System.Drawing.Color.FromArgb(75, 222, 207);
+            this.btn4.BackColor = System.Drawing.Color.FromArgb(44, 125, 160);
             this.btn4.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn4.Name = "btn4";
 
@@ -102,7 +110,7 @@ namespace CarduriMeniu.View.Panels
             this.btn5.FlatAppearance.BorderSize = 0;
             this.btn5.FlatStyle = FlatStyle.Flat;
             this.btn5.Size = new System.Drawing.Size(240, 80);
-            this.btn5.BackColor = System.Drawing.Color.FromArgb(75, 222, 207);
+            this.btn5.BackColor = System.Drawing.Color.FromArgb(44, 125, 160);
             this.btn5.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn5.Name = "btn5";
 
@@ -110,7 +118,7 @@ namespace CarduriMeniu.View.Panels
             this.btn6.FlatAppearance.BorderSize = 0;
             this.btn6.FlatStyle = FlatStyle.Flat;
             this.btn6.Size = new System.Drawing.Size(240, 80);
-            this.btn6.BackColor = System.Drawing.Color.FromArgb(75, 222, 207);
+            this.btn6.BackColor = System.Drawing.Color.FromArgb(44, 125, 160);
             this.btn6.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn6.Name = "btn6";
 
@@ -118,7 +126,7 @@ namespace CarduriMeniu.View.Panels
             this.btn7.FlatAppearance.BorderSize = 0;
             this.btn7.FlatStyle = FlatStyle.Flat;
             this.btn7.Size = new System.Drawing.Size(240, 80);
-            this.btn7.BackColor = System.Drawing.Color.FromArgb(75, 222, 207);
+            this.btn7.BackColor = System.Drawing.Color.FromArgb(44, 125, 160);
             this.btn7.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn7.Name = "btn7";
 
@@ -126,18 +134,18 @@ namespace CarduriMeniu.View.Panels
             this.btn8.FlatAppearance.BorderSize = 0;
             this.btn8.FlatStyle = FlatStyle.Flat;
             this.btn8.Size = new System.Drawing.Size(240, 80);
-            this.btn8.BackColor = System.Drawing.Color.FromArgb(75, 222, 207);
+            this.btn8.BackColor = System.Drawing.Color.FromArgb(44, 125, 160);
             this.btn8.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn8.Name = "btn8";
 
             this.btn1.Text = "Telefoane, Tablete";
-            this.btn2.Text = "Telefoane";
+                this.btn2.Text = "Telefoane";
             this.btn3.Text = "Accesorii";
-            this.btn4.Text = "Huse Telefoane";
-            this.btn5.Text = "Tablete";
-            this.btn6.Text = "Jocuri";
+                this.btn4.Text = "Huse Telefoane";
+                this.btn5.Text = "Tablete";
+                this.btn6.Text = "Jocuri";
             this.btn7.Text = "Laptopuri";
-            this.btn8.Text = "Laptopuri Gaming";
+                this.btn8.Text = "Laptopuri Gaming";
 
             //MessageBox.Show(btn1.Tag.ToString());
 
@@ -162,17 +170,22 @@ namespace CarduriMeniu.View.Panels
 
             buttonList = new List<Button>() { btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8 };
 
+
             for (int i = 0; i < buttonList.Count; i++)
             {
                 BunifuElipse bunifuElipse = new BunifuElipse();
                 bunifuElipse.TargetControl = buttonList[i];
                 bunifuElipse.ElipseRadius = 25;
 
+                buttonList[i].ForeColor = Color.White;
+                buttonList[i].Click += new EventHandler(btn_Click);
+
                 Button button = new Button();
                 button.BackColor = System.Drawing.Color.Transparent;
                 button.FlatAppearance.BorderSize = 0;
                 button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                 button.Image = Image.FromFile(path + "right.png");
+                button.ImageAlign = ContentAlignment.MiddleCenter;
                 button.Location = new System.Drawing.Point(200, 26);
                 button.Size = new System.Drawing.Size(31, 27);
                 button.Name = "btnImg"+(i+1).ToString();
@@ -186,6 +199,41 @@ namespace CarduriMeniu.View.Panels
 
             //  MessageBox.Show(arbor1.getNode().Children[3].Value.Name.ToString());
             createMenu();
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+
+            Button btn = (Button)sender;
+
+                List<Product> products = new List<Product>();
+
+            if(btn.Text == "Telefoane")
+            {
+                products = serviceQuery.getProductWithCateg("tel");
+            }
+            else if (btn.Text == "Tablete")
+            {
+                products = serviceQuery.getProductWithCateg("tab");
+            }
+            else if (btn.Text == "Huse Telefoane")
+            {
+                products = serviceQuery.getProductWithCateg("hus");
+            }
+            else if (btn.Text == "Jocuri")
+            {
+                products = serviceQuery.getProductWithCateg("joc");
+            }
+            else if (btn.Text == "Laptopuri Gaming")
+            {
+                products = serviceQuery.getProductWithCateg("gam");
+            }
+
+            if(products.Count != 0)
+            {
+                this.form.removePnl("PnlCarduri");
+                this.form.Controls.Add(new PnlCarduri(form,products));
+            }
         }
 
         public void invisibleAll()
